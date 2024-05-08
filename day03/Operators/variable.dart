@@ -6,7 +6,7 @@ void main() {
   String address = "Kathmandu";
   int age = 22;
   bool single = true;
-  double height = 5.4;
+  double height = 5.4; 
 
   print(" Name = $name");
   print("Address = $address");
