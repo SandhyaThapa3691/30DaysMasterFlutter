@@ -1,17 +1,26 @@
+import 'dart:io';
+
 void main() {
-  palindrome();
+  String? text = stdin.readLineSync();
+  bool ispalindrome = palindrome(text!);
+
+  if (ispalindrome) {
+    print("palindrome");
+  } else {
+    print("not palindrome");
+  }
 }
 
-void palindrome() {
-  String text = "madam";
+bool palindrome(String text) {
   String reverse = "";
 
   for (int i = text.length - 1; i >= 0; i--) {
     reverse += text[i];
   }
+
   if (reverse == text) {
-    print("palindrome");
+    return true;
   } else {
-    print("not palindrome");
+    return false;
   }
 }
