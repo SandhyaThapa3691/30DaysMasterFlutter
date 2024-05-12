@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   String? text = stdin.readLineSync();
-  bool ispalindrome = palindrome(text!);
+  bool ispalindrome = palindrome(text ?? '');
 
   if (ispalindrome) {
     print("palindrome");
