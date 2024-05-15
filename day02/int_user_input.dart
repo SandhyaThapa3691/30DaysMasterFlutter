@@ -4,5 +4,5 @@ void main() {
   print("Enter a square number");
   int? number = int.parse(stdin.readLineSync()!);
   int square = number * number;
-  print("Enter the number = ${square}");
+  print("number = ${square}");
 }
